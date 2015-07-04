@@ -1,0 +1,6 @@
+#!/bin/sh
+
+while true; do
+date >> /home/ubuntu/date.txt
+sleep 1
+done

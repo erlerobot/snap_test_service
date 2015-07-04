@@ -1,0 +1,12 @@
+name: test
+vendor: Victor Mayoral Vilches <victor@erlerobot.com>
+icon: meta/webdm-icon.png
+version: 1.0
+architecture: [amd64, armhf]
+services:
+    - name: servicio
+      start: script
+      description: Test service
+      security-policy:
+          apparmor: meta/test.profile
+          seccomp: meta/test.seccomp

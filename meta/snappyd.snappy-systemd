@@ -1,0 +1,17 @@
+{
+ "description": "Snappy WebDM",
+ "start": "snappyd",
+ "stop-timeout": "30s",
+ "ports": {
+  "external": {
+   "ui": {
+    "Port": "4200/tcp",
+    "Negotiable": false
+   }
+  }
+ },
+ "security-policy": {
+  "apparmor": "meta/snappyd.profile",
+  "seccomp": "meta/snappyd.seccomp"
+ }
+}
