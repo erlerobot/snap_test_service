@@ -91,6 +91,13 @@
   /var/lib/apparmor/snappy/**                                     rwl,
   /bin/systemctl                                                  Uxr,
 
+  # test app write in /home/ubuntu 
+  /home/ubuntu/*						   rw,
+ 
+  # binaries in this app
+  /bin/sleep							   ux,
+  /bin/date 							   ux,
+
   capability net_admin,
   capability dac_override,
 }
